@@ -1,40 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Next.js Authentication App
 
-## Getting Started
+This project is a simple web application built with Next.js, Material-UI (MUI), React Hook Form, and Redux Toolkit Query (RTK Query). It demonstrates proficiency in React, state management, API integration, and responsive design.
 
-First, run the development server:
+## Setup and Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (>=14.0.0)
+- npm (>=6.0.0) or yarn (>=1.22.0)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Installation Steps
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. **Clone the repository:**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+   ```bash
+   git clone <repository-url>
+   cd <repository-name>
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```
 
-## Learn More
+2. **Install dependencies:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Register Page:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+  - Registration form with email and password fields.
+  - Real-time validation using React Hook Form.
+  - API integration for user registration.
+  - Error handling and feedback using MUI's Alert component.
+
+- **Login Page:**
+
+  - Login form with email and password fields.
+  - Real-time validation using React Hook Form.
+  - API integration for user login.
+  - Error handling and feedback using MUI's Alert component.
+  - Link to the registration page if the user does not exist.
+
+- **Dashboard Page:**
+  - Protected route accessible only to authenticated users.
+  - Fetch and display a list of users using RTK Query.
+  - Pagination for navigating through multiple pages of users.
+  - Logout functionality with feedback using MUI's Alert component.
+
+## Technologies Used
+
+- **Framework:** Next.js
+- **Styling:** Material-UI (MUI)
+- **Form Management:** React Hook Form
+- **State Management & Data Fetching:** Redux Toolkit (RTK) with RTK Query
+- **API:** [Reqres.in](https://reqres.in/) for authentication and user data
